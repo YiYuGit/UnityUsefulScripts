@@ -17,7 +17,6 @@ public class DataRecording : MonoBehaviour
     [Header("The recorded file is in Assets folder")]
     [Header("Press key 'r' to start the recording")]
 
-
     // The recording status, defalut is false, so no recording unitil press "r", and stop recording when press "r" again
     public bool recordingStatus = false;
 
