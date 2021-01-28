@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+//This script read 3D coordinate data from CSV file using CSV reader script, then visualize the data by instantiate prefabs at data location
+
 public class DataPlotter : MonoBehaviour
 {
 
