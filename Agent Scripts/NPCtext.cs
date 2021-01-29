@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
@@ -7,33 +7,52 @@ using UnityEngine;
 /// </summary>
 public class NPCtext : MonoBehaviour
 {
-    //The text object, remember to put the text Anchor to 'middle center'.
-
+    //The text object, remember to put the text Anchor to 'middle center', so the text rotate around the center
     public GameObject text;
-    //Player object
 
+    //Player object drop here
     public GameObject player;
 
-    //Approaching distance
+    //Approaching distance between NPC and player
     public float approachDist = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        // Turn off text on start
+        text.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Calculate the distance between player and NPC
         float dist = Vector3.Distance(player.transform.position, transform.position);
+
+        // If text is not empty and the distance is smaller than the approach distance
         if (text != null && dist < approachDist)
         {
-            // Let the text facing the player, and change color
+            //Active the text
+            text.SetActive(true);
 
-            text.transform.LookAt(player.transform.position);
+            // Let the text facing the player, and change color, 
+            //text.transform.LookAt(player.transform.position);      // This option look at player x y z.
+
+            //This option only look at on Y axis to keep text straight 
+            Vector3 targetPostition = new Vector3(player.transform.position.x, text.transform.position.y, player.transform.position.z);
+            text.transform.LookAt(targetPostition);
+
+            // Rotate the text once moreto get correct view
             text.transform.Rotate(0, 180, 0);
+
+            // Change the text color
             text.GetComponent<TextMesh>().color = Color.blue;
+        }
+
+        if (text == null || dist > approachDist)
+        {
+            //If text is empty or player is far away, turn off text
+            text.SetActive(false);
         }
     }
 }
