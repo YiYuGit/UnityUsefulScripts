@@ -27,6 +27,7 @@ public class ObjMovingAmongTargets : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody>();
+        body.isKinematic = false;
     }
 
     // Update is called once per frame
