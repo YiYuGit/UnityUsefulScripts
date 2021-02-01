@@ -4,6 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// This script can use the Rigidbody to calculate the speed of game object
+/// And the speed is displayed with Text
+/// The speed is available in both MPH and KPH
+/// </summary>
+
+
+
 public class Speedometer : MonoBehaviour
 {
 
