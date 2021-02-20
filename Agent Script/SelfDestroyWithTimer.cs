@@ -8,7 +8,7 @@ using UnityEngine;
 /// And the remaining time will be displayed
 /// 
 /// </summary>
-public class SelfDestroy : MonoBehaviour
+public class SelfDestroyWithTimer : MonoBehaviour
 {
     // Set self destroy time
     public float destroyTime = 100f;
