@@ -5,6 +5,9 @@ using UnityEngine;
 using Valve.VR;
 
 
+// This is for VR Scooter controlling, 
+// the camera rig is set to be the child of scooter object, so the player's view can move with the scooter
+
 public class ScooterControllerVR : MonoBehaviour
 {
     private Rigidbody rb;
@@ -64,6 +67,10 @@ public class ScooterControllerVR : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // The right controller is used for acceleration, left is for braking
+        // Note here the controllers are on the opposite side of the actually T handle bar
+        // Please check it when using on different setup
+
         if (ControllerRight.GetHairTriggerDown())
         {
             verticalInput = 1f;
@@ -100,6 +107,9 @@ public class ScooterControllerVR : MonoBehaviour
 
     private void VRSteering()
     {
+        // In the VR steering, for each time's setup, the user need to update the max and min of the x position of the right controller.
+        // during the game play, when turning the T handle bar, the ControllerRight.transform.pos.x should be changing with the handle bar
+        // the value will be normailzed between 0 to 1 and moved to -1 to 1, and the value will be used to steer the direction.
         float max = -0.78f;
         float min = -0.95f;
 
