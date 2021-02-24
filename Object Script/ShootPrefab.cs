@@ -5,6 +5,20 @@ using System.Collections;
 /// Similar to the MissileLauncher script, this script is also used for shooting object.
 /// This one is used for shooting object when press a button.
 /// </summary>
+/// 
+/// 
+/// This function can also be achieved with another solution
+/// (1) Attach the prefab with a "MoveForward"script, like in update of "transform.Translate(Vector3.forward * Time.deltaTime * speed);"
+/// (2) In the shoot script update put
+/*
+
+ * if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
+
+*/
+
 
 public class ShootPrefab : MonoBehaviour
 {
