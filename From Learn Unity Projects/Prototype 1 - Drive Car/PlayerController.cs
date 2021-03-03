@@ -2,16 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script controls the drive car player 
+/// using FixedUpdate for physics related operations.
+/// </summary>
+
 public class PlayerController : MonoBehaviour
 {
 
-    private float speed = 10.0f;
+    [SerializeField] private float speed = 10.0f;
 
-    private float turnSpeed = 25.0f;
+    [SerializeField] private float turnSpeed = 25.0f;
 
-    private float horizontalInput;
+    [SerializeField] private float horizontalInput;
 
-    private float forwardInput;
+    [SerializeField] private float forwardInput;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +25,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // Get user input
         horizontalInput = Input.GetAxis("Horizontal");
