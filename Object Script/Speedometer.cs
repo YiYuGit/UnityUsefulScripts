@@ -42,6 +42,9 @@ public class Speedometer : MonoBehaviour
         // The "Convert.ToInt32()" can be relaced by Mathf.Round()
         // The Text can be replaced by "TextMeshProUGUI" , need "using TMPro" in script, and "TextMeshPro - Text" in inspector
         
+        // If using "WheelCollider.rpm", a simple simulated RPM display can also be achieved. RPM can also be simulated by Modulus/Remainder operator (%) of speed
+        // Like ((speed % 30) *40)
+        
 
 
 
