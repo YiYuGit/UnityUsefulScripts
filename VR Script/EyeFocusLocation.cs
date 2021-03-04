@@ -6,7 +6,8 @@ using System.IO;
 using System;
 
 // Need to be used with Vive SR
-// This script will record user eye focus locatoin at certain layers.
+// This script will record user eye focus locatoin in certain layers. 
+// Note the usage of Layer Mask
 
 namespace ViveSR
 {
@@ -50,9 +51,6 @@ namespace ViveSR
                     }
 
                 }
-
-
-
 
 
 
@@ -118,11 +116,7 @@ namespace ViveSR
                         }
                         */
 
-
-
                     }
-
-
 
                     //GazeRayRenderer.SetPosition(0, Camera.main.transform.position - Camera.main.transform.up * 0.05f);
                     //GazeRayRenderer.SetPosition(1, Camera.main.transform.position + GazeDirectionCombined * LengthOfRay);

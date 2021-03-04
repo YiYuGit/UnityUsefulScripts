@@ -7,6 +7,7 @@ using Valve.VR;
 
 // This is for VR Scooter controlling, 
 // the camera rig is set to be the child of scooter object, so the player's view can move with the scooter
+// Now the Horizontal control in VRSteering() is hard coded by setting the max and min of controller location, need to update 
 
 public class ScooterControllerVR : MonoBehaviour
 {
