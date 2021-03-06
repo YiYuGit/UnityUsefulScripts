@@ -8,7 +8,8 @@ using UnityEngine;
 /// On trigger enter, the script can use tag or name to determine it's a weapon(should take damage) or medicine(should heal)
 /// Whick will use the Minus() and Add() to change the fill bar
 /// </summary>
-/// 
+
+
 public class DamageAndHeal : MonoBehaviour
 {
 

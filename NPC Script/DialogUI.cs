@@ -10,8 +10,9 @@ using TMPro;  // need to import TextMeshPro from Unity-Window-TextMeshPro
 /// and drag drop the text and from canvas
 /// the "continueButton" is a button on canvas that is used for continuing the dialog by user click
 /// This scrpit can be extented by adding sound and animation.
-/// 
 /// </summary>
+
+
 public class DialogUI : MonoBehaviour
 {
 
