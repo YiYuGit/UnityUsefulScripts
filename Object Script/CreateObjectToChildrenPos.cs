@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CreateObjectToChildrenPos : MonoBehaviour
-{
     /// <summary>
     /// This script attach to a parent gameobject, and take a public gameobject 'a'. 
     /// On start, the script will create 'a's at all the children gameobject position and rotations.
@@ -11,6 +9,10 @@ public class CreateObjectToChildrenPos : MonoBehaviour
     /// Empty gameobject can be used as place holder
     /// The place holder can be turned off (optional)
     /// </summary>
+
+public class CreateObjectToChildrenPos : MonoBehaviour
+{
+
     public GameObject a;
 
     // Start is called before the first frame update
