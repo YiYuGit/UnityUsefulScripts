@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This script will loop the Debug.Log part of IEnumerator
+/// This script test the IEnumerator,
+/// StartCoroutine() inside a StartCoroutine()
+/// It will loop Debug.Log every 5 seconds
 /// </summary>
+
 
 public class TestIEnumerator : MonoBehaviour
 {
@@ -13,7 +16,6 @@ public class TestIEnumerator : MonoBehaviour
     {
         StartCoroutine(MyCoroutine());
     }
-
 
     private IEnumerator MyCoroutine()
     {
