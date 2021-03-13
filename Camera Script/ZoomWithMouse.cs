@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+///  This script attche to the camera to Zoom in and out with mouse scroll wheel
+/// </summary>
 
 public class ZoomWithMouse : MonoBehaviour
 {
-
-    /// <summary>
-    ///  Attched to the camera to Zoom in and out with mouse scroll wheel
-    /// </summary>
 
     // Zoom speed
     public float zoomSpeed = 20f;
@@ -21,7 +20,6 @@ public class ZoomWithMouse : MonoBehaviour
 
     void Update()
     {
-
         zoom = zoom - (zoomSpeed * Input.GetAxis("Mouse ScrollWheel"));
         camFov = Mathf.Clamp(zoom, fovMin, fovMax);
         //Debug.Log(camFov);
