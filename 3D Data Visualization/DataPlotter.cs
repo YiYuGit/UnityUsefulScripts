@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-//This script read 3D coordinate data from CSV file using CSV reader script, then visualize the data by instantiate prefabs at data location
+//This script read 3D coordinate data from CSV file using CSV reader script, then visualize the data by instantiate prefabs at the data's location
 
 public class DataPlotter : MonoBehaviour
 {
@@ -24,6 +24,7 @@ public class DataPlotter : MonoBehaviour
     public string yName;
     public string zName;
 
+    // The plot scale
     public float plotScale = 10;
 
     // The prefab for the data points that will be instantiated
@@ -86,14 +87,11 @@ public class DataPlotter : MonoBehaviour
                 / (zMax - zMin);
 
 
-
             */
             // Get value in poinList at ith "row", in "column" Name
             float x = Convert.ToSingle(pointList[i][xName]);
             float y = Convert.ToSingle(pointList[i][yName]);
             float z = Convert.ToSingle(pointList[i][zName]);
-
-
 
 
             // Instantiate as gameobject variable so that it can be manipulated within loop

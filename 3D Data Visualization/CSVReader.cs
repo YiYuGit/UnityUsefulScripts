@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 // Taken from here: https://bravenewmethod.com/2014/09/13/lightweight-csv-reader-for-unity/
 // Comments
 
-// Code parses a CSV, converting values into ints or floats if able, and returning a List<Dictionary<string, object>>.
+// This script parses a CSV file, converting its values into ints or floats if able, and returning a List<Dictionary<string, object>>.
 
 public class CSVReader
 {
