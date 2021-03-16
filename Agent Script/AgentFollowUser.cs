@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// Attach this script to agent. 
+/// On start, all agents with this script will wait a random range time and then follow the player(user)
+/// 
+/// </summary>
+
+
 public class AgentFollowUser : MonoBehaviour
 {
-    /// <summary>
-    /// Attach this script to agent. On start, all agents with this script will wait a random range time and then follow the player(user)
-    /// 
-    /// </summary>
-    /// 
+
 
     // Put user here
     public GameObject user;
