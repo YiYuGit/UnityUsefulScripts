@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
+/// <summary>
+/// Use the transforms of children GameObjects in 3d space as agent path points on Catmull–Rom spline
+/// LINQ is used to find in children objects. 
+/// </summary>
+
 public class AgentPath : MonoBehaviour
 {
-
-    /// <summary>
-    /// Use the transforms of children GameObjects in 3d space as agent path points on Catmull–Rom spline
-    /// </summary>
 
     //How many points you want on the curve between two children objects
     public float amountOfPoints = 30.0f;
