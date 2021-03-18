@@ -5,7 +5,7 @@ using System.Linq;
 
 /// <summary>
 /// This script attach to an empty object, then user can put actual or empty objects as children of the empty object
-/// The children obejcts can use tag 'exit' to identify themselves
+/// The children obejcts can use tag 'exit' to identify them.
 /// The ExitLocation() can use the children locations to generate location as exits location for agents.
 /// The OnDrawGizmos() will execute ExitLocation() and draw the locaiton with sphere in editor.
 /// </summary>
@@ -19,18 +19,6 @@ public class ExitLocations : MonoBehaviour
     //Copy of exitpoints for public access
     public List<Vector3> exitLocations = new List<Vector3>();
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void ExitLocation()
     {
