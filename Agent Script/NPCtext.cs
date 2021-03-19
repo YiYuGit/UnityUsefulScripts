@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 /// <summary>
 /// This script is attached to NPC object, under NPC object, put the NPC text, drag and drop the text and player into the slot
 /// The script will detect the distance between NPC and player, when the distance is smaller than the approach distance, the text will change color and facing the player
 /// </summary>
+/// 
 public class NPCtext : MonoBehaviour
 {
     //The text object, remember to put the text Anchor to 'middle center', so the text rotate around the center
