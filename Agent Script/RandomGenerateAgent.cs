@@ -11,17 +11,10 @@ public class RandomGenerateAgent : MonoBehaviour
     //Put the agent prefab here
     public GameObject agnet;
 
-
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(generateAgent());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     IEnumerator generateAgent()
