@@ -6,6 +6,7 @@ public class ScriptController : MonoBehaviour
 {
 
     /// <summary>
+    /// This script is used for switching the acive status of different scripts on the same object.
     /// On Awake, this script find all gameobjects with tag"agent", then turn on all their script1, turn off script2
     /// during the game, if user press key 'q', the scirpt will turn on script2 and turn off script1
     /// keep pressing 'q' can switch back and forth
