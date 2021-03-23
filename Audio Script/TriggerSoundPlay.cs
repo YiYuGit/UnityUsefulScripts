@@ -8,10 +8,13 @@ using UnityEngine;
 /// The script will find the audio source on start and disable the loop. 
 /// When trigger or collision happen, it will play the sound.
 /// </summary>
+
 public class TriggerSoundPlay : MonoBehaviour
 {
 
+    // Put the audio source here
     public AudioSource sound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +22,6 @@ public class TriggerSoundPlay : MonoBehaviour
         sound.loop = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnTriggerEnter(Collider other)
     {
