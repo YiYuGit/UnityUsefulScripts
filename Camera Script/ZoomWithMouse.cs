@@ -14,7 +14,9 @@ public class ZoomWithMouse : MonoBehaviour
 
     // Min and Max field of view
     public float fovMin = 3f, fovMax = 150f;
+
     private float zoom = 10;
+
     private float camFov = 120f;
 
 
