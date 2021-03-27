@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Attach to wheel mesh and drop the corresponding wheelcollider to the target, the wheel mesh will rotate with the wheel collider
+/// This script is used to rotate the car wheel model to the same as wheel colider.
+/// Attach this to wheel mesh and drop the corresponding wheelcollider to the target, the wheel mesh will rotate with the wheel collider
 /// </summary>
 
 public class CarWheel : MonoBehaviour
