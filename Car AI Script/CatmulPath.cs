@@ -3,10 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
+/// <summary>
+/// This script use the transforms of children GameObjects in 3d space as your points or define array with desired points
+/// </summary>
+
+
 public class CatmulPath : MonoBehaviour
 {
-
-    //Use the transforms of children GameObjects in 3d space as your points or define array with desired points
 
     //How many points you want on the curve between two children objects
     public float amountOfPoints = 30.0f;
