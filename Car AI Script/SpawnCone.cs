@@ -4,9 +4,12 @@ using UnityEngine;
 
 
 /// <summary>
+/// This script is used to instantiate one kind of prefab near one target object, with some randomness.
 /// Attach this script to an empty game object, drop in the car and cone object, the script will randomly generate cones in front of car to make obstacles
 /// </summary>
-/// 
+
+
+
 public class SpawnCone : MonoBehaviour
 {
     // Put in the driving car, the cone prefab and choose drop cone time interval.
@@ -20,6 +23,7 @@ public class SpawnCone : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // This can also be used in update with some control
         StartCoroutine("DropCone");
     }
 
@@ -28,7 +32,7 @@ public class SpawnCone : MonoBehaviour
     {
         while(alive)
         {
-
+            // Wait time
             yield return new WaitForSeconds(dropConeInterval);
             GameObject Temporary_Cone_Handler;
 
