@@ -6,10 +6,15 @@ using System;
 using System.Globalization;
 using System.Threading;
 
+/// <summary>
+/// This script record the time and location of gameobject in Unity
+/// Attach this to an empty object to make a Data Recorder
+/// 
+/// </summary>
+
+
 public class DataRecording : MonoBehaviour
 {
-    // This script record the time and location of gameobject
-
     // The gameobject that need to be recorded
     [Header("Drag and drop the target object here")]
     public GameObject target;
