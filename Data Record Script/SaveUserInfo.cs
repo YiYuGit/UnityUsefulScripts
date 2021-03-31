@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// This script get user input from canvas InputField, save them in PlayerPrefs and display then on the canvas Text
+/// First type in the infomation, then click save button to save, the save button need to be tied to the script
+/// The information in PlayerPrefs can be accessed across the scenes
+/// To reset the input, use the reset button
+/// For example, this script get user ID and speedlimit for the game in inputfield, save to PlayerPrefs and display the info one UI text
+///
+/// </summary>
+/// 
+
 public class SaveUserInfo : MonoBehaviour
 {
-    /// <summary>
-    /// This script get user input from canvas InputField, save them in PlayerPrefs and display then on the canvas Text
-    /// First type in the infomation, then click save button to save, the save button need to be tied to the script
-    /// The information in PlayerPrefs can be accessed across the scenes
-    /// To reset the input, use the reset button
-    /// For example, this script get user ID and speedlimit for the game in inputfield, save to PlayerPrefs and display the info one UI text
-    ///
-    /// </summary>
-    
+    //ID input field
     public InputField textBoxID;
+
+    //Int input field
     public InputField textBoxSpeedLimit;
 
     public Text DisplayText;
