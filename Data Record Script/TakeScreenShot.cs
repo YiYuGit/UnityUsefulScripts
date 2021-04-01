@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script can take screen shots in Unity game
+/// Attach this to an empty gameobject to make a screenshot camera
+/// drag and drop main camera into the slot and define the desired resolution
+/// 
+/// If you want to include UI elements in the screen shot, you can change the UI canvas Render mode to 
+/// Screen Space - Camera
+/// 
+/// </summary>
+
+
 public class TakeScreenShot : MonoBehaviour
 {
-    /// <summary>
-    /// Attach this to an empty gameobject to make a screenshot camera
-    /// drag and drop main camera into the slot and define the desired resolution
-    /// If you want to include UI elements in the screen shot, you can change the UI canvas Render mode to 
-    /// Screen Space - Camera
-    /// 
-    /// </summary>
-
-
     [Header("Drop main camera here")]
     [Header("Press 'k' to take screen shot")]
    
