@@ -65,7 +65,7 @@ public class DataRecording : MonoBehaviour
     public void WriteToFile(string message)
     {
         // The path is in assets folder, can be changed to other path
-        string path = Application.dataPath + "/RecordedData.csv";
+        string path = Application.dataPath + "/PlayerLocationData.csv";
         try
         {
             StreamWriter filewriter = new StreamWriter(path, true);

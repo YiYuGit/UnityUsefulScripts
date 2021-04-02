@@ -5,11 +5,10 @@ using System.IO;
 using System;
 
 /// <summary>
-/// Similar to the data recording script. 
+/// This script is similar to the data recording script. 
 /// Attach this to gameobject, the script will record gameobject movement infomation(time and position)
-/// When the object hit other trigger, it will compare their tag, and record the hit i
+/// When the object hit other trigger, it will compare their tag(example: door, wall), and record the hit info
 /// </summary>
-
 
 
 public class TouchLogInfo : MonoBehaviour
