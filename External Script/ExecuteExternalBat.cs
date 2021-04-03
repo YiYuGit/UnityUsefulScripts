@@ -3,6 +3,10 @@ using System.Collections;
 using System.Diagnostics;
 using System;
 
+/// <summary>
+/// This script can execute external batch file
+/// </summary>
+
 public class ExecuteExternalBat : MonoBehaviour
 {
 
