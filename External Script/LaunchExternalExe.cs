@@ -3,9 +3,14 @@ using System.Collections;
 using System.Diagnostics;
 using System;
 
+/// <summary>
+/// This script launch the external exe from Unity 
+/// </summary>
+
+
 public class LaunchExternalExe : MonoBehaviour
 {
-    // This script launch the external exe
+
     // Path of the external exe, using notepad as example
     
     [Header("Press key 'p' to launch the Exe ")]
