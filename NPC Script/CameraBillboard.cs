@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 
 /// <summary>
-/// This is learned from https://www.youtube.com/watch?v=xz4E1OnWHuk
-/// It rotates an object towards the currently active camera
-/// 1.Attach CameraBillboard component to a canvas or a game object
+/// This is script is learned from https://www.youtube.com/watch?v=xz4E1OnWHuk
+/// It will rotate an object towards the currently active camera in the scene
+/// How to use:
+/// 1. Attach CameraBillboard component to a canvas or a game object
 /// 2. Specify the offset and you're done
 /// </summary>
 
