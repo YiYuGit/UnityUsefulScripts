@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This script is attached to the same object with 'FillCanvasBar'
+/// This script is attached to the same object with 'FillCanvasBar' script
 /// The object should have collider and at least one of the colliding object should have rigidbody.
-/// On trigger enter, the script can use tag or name to determine it's a weapon(should take damage) or medicine(should heal)
-/// Whick will use the Minus() and Add() to change the fill bar
+/// On trigger enter, the script can use object tag or name to determine whether the other object is a weapon(should take damage) or medicine(should heal)
+/// Which will use the Minus() and Add() to change the fill bar status.
 /// </summary>
 
 
