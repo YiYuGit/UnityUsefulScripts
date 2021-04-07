@@ -7,7 +7,7 @@ using TMPro;  // need to import TextMeshPro from Unity-Window-TextMeshPro
 /// <summary>
 /// This script partially come from https://www.youtube.com/watch?v=f-oSXg6_AMQ
 /// This is attached to an empty gameobject to make a dialog manager, from where user input sentences
-/// and drag drop the text and from canvas
+/// and drag drop the text from canvas
 /// the "continueButton" is a button on canvas that is used for continuing the dialog by user click
 /// This scrpit can be extented by adding sound and animation.
 /// </summary>
