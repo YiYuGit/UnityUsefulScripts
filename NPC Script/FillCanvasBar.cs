@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 /// <summary>
 /// Partially come from https://www.youtube.com/watch?v=xz4E1OnWHuk
-/// 
 /// Attach canvas to gameobject as child, under the canvas put image as fill bar background, and under fill bar background put the corresponding fill image
 /// Also use the 'CameraBillboard' script to rotate the canvas always towards the camera
 /// This can be used as status bar, health bar...
