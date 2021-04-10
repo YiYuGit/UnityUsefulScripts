@@ -7,7 +7,7 @@ using UnityEngine;
     /// On start, the script will create 'a's at all the children gameobject position and rotations.
     /// This can be used when you need to create gameobject a certain location. 
     /// Empty gameobject can be used as place holder
-    /// The place holder can be turned off (optional)
+    /// The place holder can be turned off (optional) after new object creation is done.
     /// </summary>
 
 public class CreateObjectToChildrenPos : MonoBehaviour
