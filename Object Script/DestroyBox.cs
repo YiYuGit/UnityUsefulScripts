@@ -4,6 +4,7 @@ using UnityEngine;
 
 
 /// <summary>
+/// A more appropriate name should be "shatter box"
 /// Partially come from https://www.youtube.com/watch?v=EgNV0PWVaS8
 /// Attach this to gameobject, and put the shattered version prefab of the same gameobject into the slot
 /// On collision or collide with object with certain tag
@@ -29,8 +30,6 @@ public class DestroyBox : MonoBehaviour
     }
 
 
-
-   
     private void OnTriggerEnter(Collider other)
     {
         // This one is checking the tag of other gameobject
