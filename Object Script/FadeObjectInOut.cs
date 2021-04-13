@@ -13,6 +13,10 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Attach this to a prefab. The prefab will fade in and out when instantiated
+/// </summary>
+
 public class FadeObjectInOut : MonoBehaviour
 {
 
