@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This script is attached to a missile launcher object, which can detect player/user when they are in the collider range
-/// and will aim the launcher to the player/user, then shoot the weapon (bullet/missile/rocket...prefab)) in at the shoot interval
+/// This script is attached to a missile launcher object, which can detect player/user when they are in it's collider's range
+/// and then will aim the launcher to the player/user's direction, 
+/// then shoot the weapon (bullet/missile/rocket...prefab)) in the direction of the target at the setting shoot interval
 /// </summary>
 
 public class MissileLauncher : MonoBehaviour {
