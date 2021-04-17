@@ -5,6 +5,7 @@ using UnityEngine;
 /// <summary>
 /// This script is used to rotate rotor/propeller gameobject in helopter/plane
 /// attach the script to object, find the right axis and set the rotateSpeed
+/// This is for self-rotating objects. For roatating wheels ,there are other scripts.
 /// </summary>
 
 
