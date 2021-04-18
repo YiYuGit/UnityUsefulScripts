@@ -5,8 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Attach this script to any game object, and set the self destroy time
 /// The object will be destroyed at the set time
-/// And the remaining time will be displayed
-/// 
+/// And the remaining time can be displayed in debug.log
 /// </summary>
 public class SelfDestroyWithTimer : MonoBehaviour
 {
