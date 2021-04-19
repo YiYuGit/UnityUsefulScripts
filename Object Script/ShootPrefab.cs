@@ -2,10 +2,9 @@ using UnityEngine;
 using System.Collections;
 
 /// <summary>
-/// Similar to the MissileLauncher script, this script is also used for shooting object.
+/// Similar to the MissileLauncher script, this script is also used for shooting prefab object.
 /// This one is used for shooting object when press a button.
 /// </summary>
-/// 
 /// 
 /// This function can also be achieved with another solution
 /// (1) Attach the prefab with a "MoveForward"script, like in update of "transform.Translate(Vector3.forward * Time.deltaTime * speed);"
