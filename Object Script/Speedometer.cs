@@ -12,7 +12,6 @@ using UnityEngine.UI;
 /// </summary>
 
 
-
 public class Speedometer : MonoBehaviour
 {
 
@@ -45,8 +44,6 @@ public class Speedometer : MonoBehaviour
         // If using "WheelCollider.rpm", a simple simulated RPM display can also be achieved. RPM can also be simulated by Modulus/Remainder operator (%) of speed
         // Like ((speed % 30) *40)
         
-
-
 
     }
 }
