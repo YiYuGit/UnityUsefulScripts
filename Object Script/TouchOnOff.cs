@@ -6,6 +6,7 @@ using UnityEngine;
 /// This script can turn off the object meshrender when player touch the object trigger,
 /// and turn the object meshrener back on when player leave the object trigger
 /// This will make the effect of touching and making object transparent.
+/// Touch - On - Off
 /// </summary>
 
 public class TouchOnOff : MonoBehaviour
