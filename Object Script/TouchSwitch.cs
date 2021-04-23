@@ -5,7 +5,6 @@ using UnityEngine;
 /// <summary>
 /// This script can turn the sign object on and off by touch the attached object with trigger.
 /// For example, the 'sign' object can be a UI/hint/light or anything you want to control with a switch.
-/// 
 /// </summary>
 
 public class TouchSwitch : MonoBehaviour {
