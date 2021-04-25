@@ -8,7 +8,9 @@ using UnityEditor;
 /// <summary>
 /// From Unity - Foundations of Audio
 /// 
-/// This is a first person view player controller.
+/// This is a first person view player controller script.
+/// 
+/// How to use:s
 /// Make a new empty game object as plyer and attach this to the player. Also add capsule collider and character controller component.
 /// Under player, put another empty obejct at the player root to hold camera.(1)
 /// Under playerRoot, put camera.(2)
