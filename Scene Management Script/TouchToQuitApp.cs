@@ -30,7 +30,6 @@ public class TouchToQuitApp : MonoBehaviour
 
     }
 
-
     // for quiting the application using UI button
     public void ClickQuitAppButton()
     {
