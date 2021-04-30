@@ -4,7 +4,8 @@ using UnityEngine;
 
 /// <summary>
 /// This script is used to rotate rotor/propeller gameobject in helopter/plane
-/// attach the script to object, find the right axis and set the rotateSpeed
+/// attach the script to object, find the right axis using (  x y z in Vector3(0, 0, Time.deltaTime * rotateSpeed))
+/// and set the rotateSpeed
 /// </summary>
 
 
