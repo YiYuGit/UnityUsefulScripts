@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This script controls the drive car player 
+/// This script controls the drive car player by horizontal and vertical input
 /// using FixedUpdate for physics related operations.
 /// </summary>
 
