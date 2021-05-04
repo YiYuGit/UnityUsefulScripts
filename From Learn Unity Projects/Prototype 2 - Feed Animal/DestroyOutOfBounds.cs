@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 /// <summary>
-/// This script will detect if game object if out of boundary,and destroy gameobject, it can be changed to x y z 
-/// Either detect + or - using Mathf.Abs  or use if/else if
-/// 
+/// This script will detect if game object if out of boundary,and destroy gameobject, it can be changed to x y z boundaries
+/// Either detect bt + or - using Mathf.Abs  or use if/else if
 /// </summary>
+
+
 public class DestroyOutOfBounds : MonoBehaviour
 {
     private float topBound = 30;
