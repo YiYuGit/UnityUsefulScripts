@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// This is the player controller in the Unity learn Prototype 3, jumping fence game
-/// It controls the player movement, animation, particle system and sound
+/// Attah it to the player object, it controls the player movement, animation, particle system and sound
 /// </summary>
 
 
@@ -53,10 +53,8 @@ public class PlayerController : MonoBehaviour
 
         playerAudio = GetComponent<AudioSource>();
 
-        // Change gravity
+        // Change gravity by multiplying with the modifier number
         Physics.gravity *= gravityModifier;
-
-
 
 
     }
