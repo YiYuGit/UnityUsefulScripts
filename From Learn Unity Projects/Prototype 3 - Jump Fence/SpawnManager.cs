@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Spawn manager
+/// Spawn manager for the Jump Fence game
+/// It will instantiate obstaclePrefab while game is not over
 /// </summary>
 public class SpawnManager : MonoBehaviour
 {
