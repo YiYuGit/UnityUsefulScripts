@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// The enemy object will follow the player by calculating the look direction
-/// And the enemy will destroy when fall of ground.
+/// And the enemy will be destroyed when fall off ground.
 /// </summary>
 
 public class Enemy : MonoBehaviour
@@ -18,8 +18,10 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Get rigidbody component
         enemyRb = GetComponent<Rigidbody>();
 
+        // Find Player
         player = GameObject.Find("Player");
         
     }
@@ -27,10 +29,13 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Calculate the look direction to player
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
 
+        // Add force on enemy rigidbody toward the player
         enemyRb.AddForce( lookDirection * speed);
 
+        // Destroy the enemy object when fall off the ground
         if ( transform.position.y < -10)
         {
             Destroy(gameObject);
