@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This is a ball player's script, attach to an sphere with collider and rigidbody
+/// This is a ball player's script, attach to an sphere object with collider and rigidbody
 /// The movement direction is determined by the focal point's forward direction
 /// The powerup is a status that ball player can push enemy at a high speed
 /// The powerup indicator is another object the indicate the status of powerup
