@@ -4,8 +4,8 @@ using UnityEngine;
 
 /// <summary>
 ///  The spawn manager spawn both enemy and powerup objects.
-///  The enemies come in waves, this is achieved by SpawnEnemyWave
-///  When each wave is destroyed, next wave will have one more enemy.
+///  The enemies will come in waves, this is achieved by SpawnEnemyWave
+///  When all enemy in the wave is destroyed, next wave will have one more enemy.
 ///  But each wave only comes with one powerup.
 ///  All new spawn objecgt will have a new randomly generated position.
 /// </summary>
