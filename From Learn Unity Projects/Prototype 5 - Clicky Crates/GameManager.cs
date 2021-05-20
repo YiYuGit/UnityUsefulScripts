@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
-/// Game Manager for the Clicky Crates Game
+/// This is the Game Manager for the Clicky Crates Game
 /// Managing the Start/Restart/Over... of the game, and Spawn Target, Update Score,
 /// </summary>
-/// 
+
 public class GameManager : MonoBehaviour
 {
     // Put target prefabs here
@@ -42,11 +42,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     // Spawn the target while game is active, the rate in the wait for seconds is determined by the difficulty level
     IEnumerator SpawnTarget()
