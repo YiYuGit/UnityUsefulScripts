@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This script loog through all the TextToDisplay in hte List<> with a count down timer
+/// This script loop through all the TextToDisplay in the List<> with a count down timer
 /// 
 /// </summary>
 
