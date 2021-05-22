@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This is attached to all target objects
+/// This is attached to all target objects.
 /// </summary>
+
+
 public class Target : MonoBehaviour
 {
     // The point value for the object, "Good"object is positive, "Bad" object is negative
