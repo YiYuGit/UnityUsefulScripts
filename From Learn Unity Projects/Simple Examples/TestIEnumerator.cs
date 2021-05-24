@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This script test the IEnumerator,
+/// This script test the IEnumerator function,
 /// StartCoroutine() inside a StartCoroutine()
 /// It will loop Debug.Log every 5 seconds
 /// </summary>

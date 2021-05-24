@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This script will read the dialogue content, find the case or default case then print the content.
+/// This script will read the dialogue content, find the case or default case then print the content of the case.
+/// if case not exist, print default.
 /// </summary>
 
 public class TestSwitchCase : MonoBehaviour
