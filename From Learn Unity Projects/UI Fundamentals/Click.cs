@@ -10,10 +10,6 @@ public class Click : MonoBehaviour {
 
     public AudioSource audio;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
     public void onClick()
     {
@@ -21,8 +17,4 @@ public class Click : MonoBehaviour {
         Debug.Log("clicked");
     }
 
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
