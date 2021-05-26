@@ -12,11 +12,7 @@ public class Drag : MonoBehaviour {
     public Canvas canvas;
     public AudioSource audio;
 
-    // Use this for initialization
-    void Start () {
 
-    }
-    
     public void onDrag()
     {
         Vector2 position;
