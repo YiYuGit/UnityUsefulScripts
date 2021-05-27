@@ -28,8 +28,4 @@ public class DropdownSelection : MonoBehaviour {
         Debug.Log("selected something different at index " + index + ": " + selection);
     }
 
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }
