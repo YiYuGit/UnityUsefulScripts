@@ -10,10 +10,6 @@ public class goOffscreen : MonoBehaviour {
 
     public List<GameObject> MoveObjects;
 
-	// Use this for initialization
-	void Start () {
-        
-	}
 	
     public void moveOffscreen()
     {
@@ -24,8 +20,4 @@ public class goOffscreen : MonoBehaviour {
         }
     }
 
-	// Update is called once per frame
-	void Update () {
-		
-	}
-}
+
