@@ -11,10 +11,6 @@ public class InputText : MonoBehaviour {
 
     public string nameValue;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
 
     public void onChange()
     {
@@ -22,8 +18,4 @@ public class InputText : MonoBehaviour {
         Debug.Log("new things are being typed: " + nameValue);
     }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
