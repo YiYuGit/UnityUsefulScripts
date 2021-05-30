@@ -10,10 +10,6 @@ public class Hover : MonoBehaviour {
 
     public AudioSource audio;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
 
     public void onHover()
     {
@@ -21,8 +17,5 @@ public class Hover : MonoBehaviour {
         Debug.Log("hover");
     }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
