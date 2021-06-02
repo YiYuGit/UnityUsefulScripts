@@ -11,11 +11,6 @@ public class VolumeValue : MonoBehaviour {
 
     public float volume;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-
     public void onChange()
     {
         volume = GetComponent<Slider>().value;
