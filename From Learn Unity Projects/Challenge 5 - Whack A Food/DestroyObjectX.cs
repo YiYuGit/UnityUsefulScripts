@@ -6,6 +6,7 @@ using UnityEngine;
 /// This is attached to particle system of explosion.
 /// This will destroy the particle after 2 seconds.
 /// </summary>
+
 public class DestroyObjectX : MonoBehaviour
 {
     void Start()
