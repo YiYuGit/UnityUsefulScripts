@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerControllerX : MonoBehaviour
 {
+    //dog prefab
     public GameObject dogPrefab;
 
+    //cool down time
     private float cdTime = 1.0f;
 
+    // timer time
     private float timer = 0.0f;
 
     // Update is called once per frame
