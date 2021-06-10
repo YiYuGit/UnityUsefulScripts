@@ -6,6 +6,7 @@ public class SpawnManagerX : MonoBehaviour
 {
     public GameObject[] ballPrefabs;
 
+    // spawn position limits
     private float spawnLimitXLeft = -22;
     private float spawnLimitXRight = 7;
     private float spawnPosY = 30;
@@ -19,7 +20,8 @@ public class SpawnManagerX : MonoBehaviour
         InvokeRepeating("SpawnRandomBall", startDelay, Random.Range(3.0f, 6.0f));
     }
 
-    // Spawn random ball at random x position at top of play area
+
+    // Spawn random ball at random x position at top of the play area
     void SpawnRandomBall ()
     {
         // Generate random ball index and random spawn position
