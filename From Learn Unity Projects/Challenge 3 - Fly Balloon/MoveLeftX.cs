@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Move left script for object and background, the back ground will be repeated with other script
+/// This is the move left script for object and background, the back ground will be repeated with other script
 /// Non-background object will be destroyed outside boundary
 /// </summary>
 
