@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 /// <summary>
-/// Control the balloon player, it will move up by Space key, and will collide with Money or Bomb
+/// This script control the balloon player, it will move up by Space key, and will collide with Money or Bomb
 /// Money will play fireworks and Bomb will play explosion. Both particle system have their own sound
 /// If collide with ground, it will bounce up.
 /// </summary>
