@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Repeat the background image
+/// Repeat the background image when the background image reach the repeatWidth from the start pos.
 /// </summary>
 
 public class RepeatBackgroundX : MonoBehaviour
