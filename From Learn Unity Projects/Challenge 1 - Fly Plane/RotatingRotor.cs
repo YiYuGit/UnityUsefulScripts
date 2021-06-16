@@ -13,12 +13,6 @@ public class RotatingRotor : MonoBehaviour {
 
 	//Rotate speed
     public int rotateSpeed =1800;
-
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {
