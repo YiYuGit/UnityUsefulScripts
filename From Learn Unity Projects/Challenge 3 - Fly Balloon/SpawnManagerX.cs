@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// This spawn manager will produce prefabs at the delay and interval.
-/// The location will be random
+/// The location will be random.
 /// And the spawn will be stopped when game is over from player controller script
 /// </summary>
 
