@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// The enemy will find the player goal as their moving destination.
-/// At each wave, the enemy will read Spawn Manager's wave count to increase their speed.
+/// At begiing of each wave, the enemy will read Spawn Manager's wave count to increase their speed.
 /// </summary>
 
 public class EnemyX : MonoBehaviour
