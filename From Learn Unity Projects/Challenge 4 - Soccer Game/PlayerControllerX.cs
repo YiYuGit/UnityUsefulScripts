@@ -9,6 +9,7 @@ using UnityEngine;
 /// The moving direction is determined by the focal point direction.
 /// The moving control is determined by the vertical input.
 /// </summary>
+
 public class PlayerControllerX : MonoBehaviour
 {
     private Rigidbody playerRb;
