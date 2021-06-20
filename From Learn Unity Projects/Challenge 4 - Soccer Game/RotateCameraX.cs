@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This script rotoate the camera view around the player.
+/// This script rotoate the camera view around the player using the horizontal input.
 /// </summary>
 public class RotateCameraX : MonoBehaviour
 {
