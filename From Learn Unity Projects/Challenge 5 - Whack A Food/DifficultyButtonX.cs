@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 /// <summary>
 /// Attached to difficulty button, and set int for different difficulty value
-/// 
 /// Similar to the DiffcultyButton in Challenge 5 - Clicky Crates
-/// 
 /// </summary>
 public class DifficultyButtonX : MonoBehaviour
 {
