@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// SpawnEnemyWave when the objects with "Enemy" tags are all gone in the scene.
-/// Each wave has increment
+/// Each wave has increment compare to previous wave.
 /// And each wave have one powerup.
 /// At the begining of each wave, the player position resets.
 /// </summary>
