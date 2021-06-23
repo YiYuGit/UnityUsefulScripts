@@ -7,9 +7,8 @@ using UnityEngine.UI;
 
 /// <summary>
 /// The game manager for the Challenge 5, Whack-A-Food
-/// Instantiate food or bad object at random location.
+/// It can Instantiate food or bad object at random location in the scene.
 /// Similar to the GameManager in Challenge 5 - Clicky Crates
-/// 
 /// </summary>
 
 public class GameManagerX : MonoBehaviour
