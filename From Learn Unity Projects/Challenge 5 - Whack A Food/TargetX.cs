@@ -4,8 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// When instantiated, the target find a random place.
-/// At the end of its life. If target is not destroyed by player,
-/// and this target is not "Bad" target, the game is over.
+/// At the end of its life. If target is not destroyed by player,and this target is not "Bad" target, the game is over.
 /// The trigger is in the background, and when the time is up, target will hit the trigger and trigger the game over process.
 /// </summary>
 
