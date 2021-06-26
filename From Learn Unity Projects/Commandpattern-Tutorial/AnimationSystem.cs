@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Animation system script
+/// </summary>
+
 public class AnimationSystem
 {
     
