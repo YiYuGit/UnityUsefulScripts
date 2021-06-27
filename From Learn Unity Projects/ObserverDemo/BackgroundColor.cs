@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// Background color script
+/// </summary>
+
 public class BackgroundColor : MonoBehaviour
 {
     #region Field Declarations
