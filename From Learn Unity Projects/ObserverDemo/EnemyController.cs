@@ -3,6 +3,11 @@ using UnityEngine;
 
 public delegate void EnemyDestroyHandler(int pointValue);
 
+/// <summary>
+/// Enemy controller script
+/// </summary>
+
+
 public class EnemyController : MonoBehaviour
 {
     #region Field Declarations
