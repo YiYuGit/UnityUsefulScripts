@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+/// <summary>
+/// Game scene controller script
+/// </summary>
+
 public class GameSceneController : MonoBehaviour
 {
     public event EnemyDestroyHandler ScoreUpdatedonKill;
