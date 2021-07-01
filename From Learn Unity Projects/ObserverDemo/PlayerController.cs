@@ -2,6 +2,10 @@
 using UnityEngine;
 using System;
 
+/// <summary>
+/// Player controller script
+/// </summary>
+
 public class PlayerController : MonoBehaviour
 {
     #region Field Declarations
