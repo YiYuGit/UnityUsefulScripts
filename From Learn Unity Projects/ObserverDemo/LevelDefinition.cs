@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 [CreateAssetMenu(menuName = "Custom/Level Definition", fileName = "NewLevelDefinition")]
+
 public class LevelDefinition : ScriptableObject
+
+
+    ///Level Definition
 {
     public string levelName;
     public int numberOfEnemies;
