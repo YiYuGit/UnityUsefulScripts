@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Powerup
+/// </summary>
 public class PowerupController :MonoBehaviour
 {
     #region Field Declarations
