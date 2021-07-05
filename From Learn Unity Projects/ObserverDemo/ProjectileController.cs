@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 
 public delegate void OutOfBoundsHandler();
+/// <summary>
+/// Projectile controller script
+/// </summary>
 
 public class ProjectileController : MonoBehaviour
 {
