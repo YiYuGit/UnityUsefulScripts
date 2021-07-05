@@ -2,6 +2,7 @@
 
 /// <summary>
 /// Contains static methods and fields for determining screen bounds
+/// 
 /// </summary>
 public class ScreenBounds : MonoBehaviour
 {
