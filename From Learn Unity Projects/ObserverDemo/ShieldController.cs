@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Shield controller script
+/// </summary>
+
 public class ShieldController : MonoBehaviour
 {
     [SerializeField]
