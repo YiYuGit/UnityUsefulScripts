@@ -3,6 +3,7 @@
 /// <summary>
 /// Adds a simple star-filled background
 /// </summary>
+/// 
 [RequireComponent(typeof(ParticleSystem))]
 public class Stars : MonoBehaviour
 {
