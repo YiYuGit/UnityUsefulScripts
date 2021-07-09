@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/// <summary>
+/// Player class
+/// </summary>
+
 public class Player
 {
     //Member variables can be referred to as
