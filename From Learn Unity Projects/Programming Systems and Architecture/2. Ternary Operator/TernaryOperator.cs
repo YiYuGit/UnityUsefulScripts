@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Ternary Operator
+/// </summary>
+
 public class TernaryOperator : MonoBehaviour
 {
     void Start()
