@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Enemy script with static int
+/// </summary>
 public class Enemy
 {
     //Static variables are shared across all instances
