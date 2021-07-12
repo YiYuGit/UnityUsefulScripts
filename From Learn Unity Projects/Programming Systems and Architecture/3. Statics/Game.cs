@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Game class access static variable
+/// 
+/// </summary>
 public class Game
 {
     void Start()
