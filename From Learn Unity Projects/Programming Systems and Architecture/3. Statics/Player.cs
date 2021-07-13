@@ -1,6 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+
+/// <summary>
+/// Player static variables example
+/// </summary>
+
+
 public class Player : MonoBehaviour
 {
     //Static variables are shared across all instances
