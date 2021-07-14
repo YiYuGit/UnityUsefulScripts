@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Player manager, access Player class static variables
+/// </summary>
+
 public class PlayerManager : MonoBehaviour
 {
     void Start()
