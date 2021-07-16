@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Accessing the utility static methods
+/// </summary>
 public class UtilitiesExample : MonoBehaviour
 {
     void Start()
