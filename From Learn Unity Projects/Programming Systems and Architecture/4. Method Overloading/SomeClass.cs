@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Example of method overloading, adding int or adding string
+/// </summary>
+
+
 public class SomeClass
 {
     //The first Add method has a signature of
