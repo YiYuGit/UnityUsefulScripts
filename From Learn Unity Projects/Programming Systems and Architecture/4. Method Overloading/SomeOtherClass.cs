@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Using the method overloading in the SomeClass
+/// </summary>
+
 public class SomeOtherClass : MonoBehaviour
 {
     void Start()
