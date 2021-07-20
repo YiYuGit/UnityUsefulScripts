@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Geneic class example
+/// </summary>
+
 public class GenericClassExample : MonoBehaviour
 {
     void Start()
