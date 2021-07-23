@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Generic example
+/// </summary>
+
 public class SomeOtherClass  MonoBehaviour
 {
     void Start()
