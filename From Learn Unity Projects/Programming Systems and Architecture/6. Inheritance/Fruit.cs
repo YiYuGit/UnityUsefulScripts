@@ -3,6 +3,7 @@ using System.Collections;
 
 //This is the base class which is
 //also known as the Parent class.
+
 public class Fruit
 {
     public string color;
