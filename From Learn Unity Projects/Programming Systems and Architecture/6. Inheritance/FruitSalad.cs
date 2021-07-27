@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Inheritance
+/// </summary>
+
 public class FruitSalad : MonoBehaviour
 {
     void Start()
