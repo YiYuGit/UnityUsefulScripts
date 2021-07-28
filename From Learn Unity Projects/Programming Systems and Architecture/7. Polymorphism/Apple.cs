@@ -15,6 +15,7 @@ public class Apple : Fruit
     //In this example, the "new" keyword is used to supress
     //warnings from Unity while not overriding the methods
     //in the Apple class.
+
     public new void Chop()
     {
         Debug.Log("The apple has been chopped.");
