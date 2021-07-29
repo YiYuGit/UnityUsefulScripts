@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/// <summary>
+/// Fruits with public methods
+/// </summary>
 public class Fruit
 {
     public Fruit()
