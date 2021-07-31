@@ -10,6 +10,7 @@ public class FruitSalad : MonoBehaviour
         //works because of Polymorphism. Since an Apple is a Fruit,
         //this works just fine. While the Apple reference is stored
         //in a Fruit variable, it can only be used like a Fruit
+
         Fruit myFruit = new Apple();
 
         myFruit.SayHello();
