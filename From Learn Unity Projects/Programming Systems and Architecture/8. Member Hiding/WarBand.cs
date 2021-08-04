@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/// <summary>
+/// call yell() methond in different class
+/// </summary>
 public class WarBand : MonoBehaviour
 {
     void Start()
