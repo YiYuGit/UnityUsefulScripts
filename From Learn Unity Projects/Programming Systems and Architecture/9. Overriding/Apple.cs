@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// apple override 
+/// </summary>
 public class Apple : Fruit
 {
     public Apple()
