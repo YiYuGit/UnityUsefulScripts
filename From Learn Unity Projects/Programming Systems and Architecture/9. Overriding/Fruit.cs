@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/// <summary>
+/// Fruit class with the chop() and sayhello methods
+/// </summary>
+
 public class Fruit
 {
     public Fruit()
