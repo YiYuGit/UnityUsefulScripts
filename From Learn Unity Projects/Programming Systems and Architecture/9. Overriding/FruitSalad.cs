@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Fruit salad script example
+/// </summary>
 public class FruitSalad : MonoBehaviour
 {
     void Start()
