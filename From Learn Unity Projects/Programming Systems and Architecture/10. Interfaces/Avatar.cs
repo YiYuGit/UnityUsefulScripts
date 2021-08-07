@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// interface
+/// </summary>
+
+
 public class Avatar : MonoBehaviour, IKillable, IDamageable<float>
 {
     //The required method of the IKillable interface
