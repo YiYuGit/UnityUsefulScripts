@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/// <summary>
+/// some class
+/// </summary>
 public class SomeClass : MonoBehaviour
 {
     void Start()
