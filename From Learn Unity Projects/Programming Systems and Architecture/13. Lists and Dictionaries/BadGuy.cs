@@ -2,6 +2,11 @@
 using System.Collections;
 using System; //This allows the IComparable Interface
 
+/// <summary>
+/// Lists and Dictionaries sorting
+/// </summary>
+
+
 //This is the class you will be storing
 //in the different collections. In order to use
 //a collection's Sort() method, this class needs to
