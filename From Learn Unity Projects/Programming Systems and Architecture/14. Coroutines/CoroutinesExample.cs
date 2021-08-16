@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// CoroutinesExample
+/// </summary>
+
 public class CoroutinesExample : MonoBehaviour
 {
     public float smoothing = 1f;
