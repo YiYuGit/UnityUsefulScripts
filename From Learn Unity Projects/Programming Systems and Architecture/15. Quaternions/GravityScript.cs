@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// In update, keep moving the object toward the target, and change object roatation base on the relative position between object and target.
+/// </summary>
 public class GravityScript : MonoBehaviour
 {
     public Transform target;
