@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// Use coroutine to make object move
+/// 
+/// 
+/// </summary>
 public class PropertiesAndCoroutines : MonoBehaviour
 {
     public float smoothing = 7f;
