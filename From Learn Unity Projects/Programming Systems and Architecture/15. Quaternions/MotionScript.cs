@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Move object along the Horizontal axis, at the speed of 3
+/// </summary>
+
 public class MotionScript : MonoBehaviour
 {
     public float speed = 3f;
