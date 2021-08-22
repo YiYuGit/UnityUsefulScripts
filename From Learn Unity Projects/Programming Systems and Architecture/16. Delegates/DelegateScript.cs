@@ -2,6 +2,11 @@
 using System.Collections;
 
 
+/// <summary>
+/// delegate example
+/// </summary>
+
+
 public class DelegateScript : MonoBehaviour
 {
     delegate void MyDelegate(int num);
