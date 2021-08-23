@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// MultiDelegate script
+/// </summary>
+
 public class MulticastScript : MonoBehaviour
 {
     delegate void MultiDelegate();
