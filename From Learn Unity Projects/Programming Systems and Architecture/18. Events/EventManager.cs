@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Event manager , on click 
+/// </summary>
+
+
 public class EventManager : MonoBehaviour
 {
     public delegate void ClickAction();
