@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// The teleport script
+/// </summary>
+
+
 public class TeleportScript : MonoBehaviour
 {
     void OnEnable()
