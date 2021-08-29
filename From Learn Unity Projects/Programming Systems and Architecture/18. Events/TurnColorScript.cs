@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Change random color
+/// </summary>
 public class TurnColorScript : MonoBehaviour
 {
     void OnEnable()
