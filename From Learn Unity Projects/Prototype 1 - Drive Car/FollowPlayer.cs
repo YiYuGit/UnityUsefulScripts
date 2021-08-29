@@ -6,6 +6,7 @@ using UnityEngine;
 /// This script controls the camera to follow the player.
 /// using LateUpdate for rendering related operations. 
 /// </summary>
+/// 
 
 public class FollowPlayer : MonoBehaviour
 {
