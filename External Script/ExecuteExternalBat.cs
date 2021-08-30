@@ -40,10 +40,5 @@ public class ExecuteExternalBat : MonoBehaviour
             }
         }
         
-
-           
-
-
-
     }
 }
