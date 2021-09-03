@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This is a simple player controller to move player horizontally
+/// This is a simple player controller to move player horizontally.
 /// </summary>
 
 public class PlayerController : MonoBehaviour
