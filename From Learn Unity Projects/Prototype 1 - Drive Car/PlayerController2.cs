@@ -6,7 +6,7 @@ using TMPro;
 
 /// <summary>
 /// Player Controller Ver 2
-/// Using AddRelativeForce to drive the car
+/// Using AddRelativeForce to drive the car.
 /// Note the speed and RPM. 
 /// And the IsOnGround status to avodig car flying
 /// </summary>
