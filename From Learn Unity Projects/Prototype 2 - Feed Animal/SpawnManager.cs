@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This Spawn manager use InvokeRepeating to spawn prefab at prefab location, and can use Random.Range to change location or time
+/// This Spawn manager use InvokeRepeating to spawn prefab at prefab location, and can use Random.Range to change location or time of the spawn object
 /// </summary>
 
 public class SpawnManager : MonoBehaviour
