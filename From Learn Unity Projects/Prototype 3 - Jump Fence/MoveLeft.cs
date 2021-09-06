@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-///  This script move the obstacles to the left side, the back ground also use the same script
+///  This script move the obstacles to the left side, the back ground also use the same script to move
 /// </summary>
 
 public class MoveLeft : MonoBehaviour
