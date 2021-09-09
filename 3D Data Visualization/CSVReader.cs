@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 
 // This script parses a CSV file, converting its values into ints or floats if able, and returning a List<Dictionary<string, object>>.
 
+
 public class CSVReader
 {
     static string SPLIT_RE = @",(?=(?:[^""]*""[^""]*"")*(?![^""]*""))"; // Define delimiters, regular expression craziness
