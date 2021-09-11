@@ -6,7 +6,6 @@ using UnityEngine.AI;
 /// <summary>
 /// Attach this script to an agent, the agent will follow the agentpath, walk in a loop
 /// </summary>
-/// 
 
 public class AgentFollowPath : MonoBehaviour
 {
