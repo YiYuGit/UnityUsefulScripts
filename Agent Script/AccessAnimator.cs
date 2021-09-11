@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// This script is to attach to an object with trigger, and linked to an object like an agent with animator
 /// On trigger enter or the condition is met, the script will change parameters in animator to make changes
-/// In this example, the target will be set active false on start, when trigger is hit by player, the target will be set active and a 'move' bool will be set true
+/// In this example, the target will be set active false on start, when trigger is hit by player, the target will be set active and a 'move' bool will be set true,
 /// The corresponding action will take place.
 /// </summary>
 
