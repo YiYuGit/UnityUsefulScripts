@@ -91,7 +91,6 @@ public class CarScript : MonoBehaviour {
 			rigidBody.velocity = Vector3.zero;
 			aggForce = Vector3.zero;
 
-
 			crossing = false;
 
 
