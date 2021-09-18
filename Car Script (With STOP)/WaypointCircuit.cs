@@ -73,7 +73,6 @@ namespace UnityStandardAssets.Utility
                 ++point;
             }
 
-
             // get nearest two points, ensuring points wrap-around start & end of circuit
             p1n = ((point - 1) + numPoints)%numPoints;
             p2n = point;
