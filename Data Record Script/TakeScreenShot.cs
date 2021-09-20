@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This script can take screen shots in Unity game
+/// This script can take screen shots in the Unity game
 /// Attach this to an empty gameobject to make a screenshot camera
 /// drag and drop main camera into the slot and define the desired resolution
 /// 
