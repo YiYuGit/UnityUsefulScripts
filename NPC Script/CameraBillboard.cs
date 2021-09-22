@@ -8,7 +8,6 @@
 /// 2. Specify the offset and you're done
 /// </summary>
 
-
 public class CameraBillboard : MonoBehaviour
 {
     public bool BillboardX = true;
