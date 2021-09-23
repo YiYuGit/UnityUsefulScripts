@@ -5,7 +5,7 @@ using System.Linq;
 
 /// <summary>
 /// Use the transforms of children GameObjects in 3d space as agent path points on Catmull–Rom spline
-/// LINQ is used to find in children objects. 
+/// LINQ is used to find location object in children objects. 
 /// </summary>
 
 public class AgentPath : MonoBehaviour
