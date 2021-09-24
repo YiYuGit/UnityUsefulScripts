@@ -22,10 +22,13 @@ public class ExitLocations : MonoBehaviour
 
     public void ExitLocation()
     {
+        // Clear the exitLocations list
         exitLocations.Clear();
 
+        // Using LINQ to get transform components in children objects
         exitPoints = GetComponentsInChildren<Transform>().Where(r => r.tag == "exit").ToList();
 
+        // For each transform, add to the exitLocations list
         for (int i = 0; i < exitPoints.Count; i++)
         {
             Vector3 C = exitPoints[i].position;
@@ -37,6 +40,7 @@ public class ExitLocations : MonoBehaviour
     void OnDrawGizmos()
     {
 
+        // This will call the ExitLocation() in editor mode.
         ExitLocation();
         Gizmos.color = Color.red;
         foreach (Transform temp in exitPoints)
