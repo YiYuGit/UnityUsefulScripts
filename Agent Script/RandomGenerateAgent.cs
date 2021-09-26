@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Attach this to an empty object, so it will generate agent at certain location and time interval
+/// Attach this to an empty object, it will generate the prefab agent at certain random range location and time interval
 /// </summary>
 
 public class RandomGenerateAgent : MonoBehaviour
