@@ -17,7 +17,7 @@ public class ObjActiveController : MonoBehaviour
     public GameObject[] objs;
 
     // Time interval
-    public int waitTime = 3;
+    public float waitTime = 3;
 
     // Start with the first target point
     private int current = 0;
