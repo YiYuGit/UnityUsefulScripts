@@ -9,7 +9,6 @@ using UnityEngine.UI;
 /// </summary>
 
 
-
 public class Changingtext : MonoBehaviour
 {
     // Canvas UI text
@@ -29,7 +28,6 @@ public class Changingtext : MonoBehaviour
     {
         message = this.transform.position.ToString();
         changing.text = message;
-
 
     }
 }
