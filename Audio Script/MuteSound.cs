@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// This script mute and unmute all sound in the scene when press 'm'
-/// It can also be used with UI button to use the public method
+/// It can also be used with UI button to use the public method.
 /// </summary>
 
 public class MuteSound : MonoBehaviour
