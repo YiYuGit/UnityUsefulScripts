@@ -6,7 +6,7 @@ using System.Reflection;
 using System;
 
 /// <summary>
-/// Simple camera controller that use the Mouse X and Y to rotate the camera
+/// This is a simple camera controller that use the Mouse X and Y to rotate the camera
 /// </summary>
 
 public class SimpleCameraController : MonoBehaviour
