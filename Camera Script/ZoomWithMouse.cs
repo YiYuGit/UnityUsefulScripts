@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-///  This script attche to the camera to Zoom in and out with mouse scroll wheel
+/// This script is attched to the camera to control the Zoom in and out with mouse scroll wheel
 /// </summary>
 
 public class ZoomWithMouse : MonoBehaviour
