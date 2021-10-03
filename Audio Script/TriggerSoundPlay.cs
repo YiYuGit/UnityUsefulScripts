@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Attach both script and audio source to game object
+/// Attach both script and audio source to one game object
 /// Make sure the object has collider
 /// The script will find the audio source on start and disable the loop. 
-/// When trigger or collision happen, it will play the sound.
+/// When trigger or collision happen, it will play the audio.
 /// </summary>
 
 public class TriggerSoundPlay : MonoBehaviour
