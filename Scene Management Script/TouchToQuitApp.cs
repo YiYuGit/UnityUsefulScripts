@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 /// or 
 /// UI use the ClickQuitAppButton()
 /// or 
-/// press the key
+/// press the key Escape
 /// </summary>
 
 public class TouchToQuitApp : MonoBehaviour
