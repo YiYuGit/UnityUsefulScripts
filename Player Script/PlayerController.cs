@@ -10,10 +10,12 @@ using UnityEditor;
 /// 
 /// This is a first person view player controller script.
 /// 
-/// How to use:s
-/// Make a new empty game object as plyer and attach this to the player. Also add capsule collider and character controller component.
+/// How to use:
+/// 
+/// Make a new empty game object as player and attach this script to the player. 
+/// Also add capsule collider and character controller component.
 /// Under player, put another empty obejct at the player root to hold camera.(1)
-/// Under playerRoot, put camera.(2)
+/// Under player root, put camera.(2)
 /// Drag (1) and (2) back to PlayerController's slots.
 /// Adjust the control settings.
 /// Then a first person view player controller is ready to be used in 3D scene. Using WASD or arrows, and mouse.
