@@ -31,13 +31,13 @@ public class DamageAndHeal : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        // When hit weapon, take damage
+        // When hit weapon, take damage, minus the health bar
         if (other.gameObject.CompareTag("weapon"))
         {
             barScript.Minus();
         }
 
-        // When hit medicine, take heal
+        // When hit medicine, take heal, add the health bar
         // Can use object name or tag to execute trigger 
         //if (other.gameObject.CompareTag("medicine"))
         if (other.gameObject.name == "medicine")
