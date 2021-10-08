@@ -4,9 +4,9 @@ using UnityEngine;
 
 
 /// <summary>
-/// A more appropriate name should be "shatter box"
-/// Partially come from https://www.youtube.com/watch?v=EgNV0PWVaS8
-/// Attach this to gameobject, and put the shattered version prefab of the same gameobject into the slot
+/// A more appropriate name should be "shatter box"script
+/// This script content partially come from https://www.youtube.com/watch?v=EgNV0PWVaS8
+/// Attach this to original prefab gameobject, and put the shattered version prefab of the same gameobject into the slot
 /// On collision or collide with object with certain tag
 /// The old object will be destroyed and instantiate a new shattered object at the same transform
 /// The effect is object get destroyed and break into pieces.
