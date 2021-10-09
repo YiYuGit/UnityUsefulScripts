@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 /// or 
 /// UI use the ClickRestartButton()
 /// or 
-/// pressing the key
+/// pressing the key "l"
 /// </summary>
 
 
