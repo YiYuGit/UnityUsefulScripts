@@ -8,7 +8,12 @@ using System;
 
 
 /// <summary>
-/// A first person helicopter controller, using keyboard to control a helicopter model, awsd for horizontal moving, q e for horizontal turning. z x for vertical turning up and down. left shift and space for descending and ascending
+/// A first person helicopter controller, 
+/// using keyboard to control a helicopter model, 
+/// a w s d for horizontal moving, 
+/// q e for horizontal turning. 
+/// z x for vertical turning up and down. 
+/// left shift and space for descending and ascending
 /// the helicopter model's rotor should be rotating with the rotate rotor script.
 /// And it can be combined with shootPrefab script to launch weapon
 /// 
