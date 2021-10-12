@@ -5,8 +5,8 @@ using UnityEngine;
 using Valve.VR;
 
 
-// This is for VR Scooter controlling, 
-// the camera rig is set to be the child of scooter object, so the player's view can move with the scooter
+// This script is for VR Scooter controlling, 
+// the camera rig is set as the child of scooter object, so the player's view can move with the scooter
 // Now the Horizontal control in VRSteering() is hard coded by setting the max and min of controller location, need to update each time installed on new places
 
 public class ScooterControllerVR : MonoBehaviour
