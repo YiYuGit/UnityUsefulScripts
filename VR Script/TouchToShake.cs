@@ -4,7 +4,8 @@ using UnityEngine;
 using Valve.VR;
 
 /// <summary>
-/// This script is attached to SteamVR controller object, it will track the distance between 'pipe' object, and will trigger sound or shake based on the distance
+/// This script is attached to SteamVR controller object, it will track the distance between controller and the 'pipe' object, 
+/// and will trigger sound or shake based on the distance
 /// It will also shake when the controller collide with 'car' object
 /// 
 /// </summary>
