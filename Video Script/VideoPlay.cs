@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This script is attached to object with video player. Depeneding on the situation, choose to get video player on start or in update(if)
+/// This script is attached to object with video player. 
+/// Depeneding on the situation, choose to get video player on start or in update(if)
 /// use Jump button to play or pause the video.
 /// </summary>
 
