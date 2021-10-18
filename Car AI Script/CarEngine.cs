@@ -6,7 +6,8 @@ using UnityEngine;
 /// This script is based on the Unity Car AI tutorial https://www.youtube.com/watch?v=o1XOUkYUDZU&ab_channel=EYEmaginary with some self-made modifications
 /// Using this script, in combination with CarWheel,CatulPath, and SpawnCone scripts
 /// User can build a self-driving car with obstacle avoiding capability
-/// Attach this to the car object, Drag in the wheel colliders, and carpath, put the car in a road environment
+/// Attach this to the car gameobject, Drag in the wheel colliders, and carpath, put the car in a road environment.
+/// It uses raycast to detect obstacles and avoid them by steering.
 /// </summary>
 
 
