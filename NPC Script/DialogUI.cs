@@ -8,15 +8,15 @@ using TMPro;  // need to import TextMeshPro from Unity-Window-TextMeshPro
 /// This script partially come from https://www.youtube.com/watch?v=f-oSXg6_AMQ
 /// This is attached to an empty gameobject to make a dialog manager, from where user input sentences
 /// and drag drop the text from canvas
-/// the "continueButton" is a button on canvas that is used for continuing the dialog by user click
-/// This scrpit can be extented by adding sound and animation.
+/// the "continueButton" is a button on canvas that is used for continuing the dialog by user click input
+/// This scrpit can be extented by adding sounds and animations.
 /// </summary>
 
 
 public class DialogUI : MonoBehaviour
 {
 
-    // The text on canvas
+    // The text object on canvas
     public TextMeshProUGUI textDisplay;
 
     // The sentences of the dialog
@@ -24,7 +24,7 @@ public class DialogUI : MonoBehaviour
 
     private int index;
 
-    // The time between two letters
+    // The time interval between two letters
     public float typingSpeed;
 
     // The button for continuing the dialog
