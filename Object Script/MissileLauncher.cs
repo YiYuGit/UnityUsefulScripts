@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// This script is attached to a missile launcher object, which can detect player/user when they are in it's collider's range
-/// and then will aim the launcher to the player/user's direction, 
+/// and then will aim the launcher toward the player/user's direction, 
 /// then shoot the weapon (bullet/missile/rocket...prefab)) in the direction of the target at the setting shoot interval
 /// </summary>
 
