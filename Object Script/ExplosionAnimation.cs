@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// In the Unity Learn2D project, when On Trigger Enter detect Player, set the explosion true and play the explo animation, then destroy the explosion obejct in 3 sec.
+/// In the Unity Learn2D project, when On Trigger Enter detect the Player, set the explosion to be true and play the explosion animation, then destroy the explosion obejct in 3 sec.
 /// </summary>
 
 
