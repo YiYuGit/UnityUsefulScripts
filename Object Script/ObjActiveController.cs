@@ -4,9 +4,9 @@ using UnityEngine;
 
 
 /// <summary>
-/// This script attach to an empty object as the controller, drop all controlled objects in to objs in the desired sequence
-/// Set the time interval in waitTime
-/// Once started, the controller will switch between the objects, set one object active at a time, loop through all objects in the list
+/// This script attach to an empty object as the controller, drop all controlled objects in to objs in the desired sequence.
+/// Set the time interval in waitTime.
+/// Once started, the controller will switch between the objects, set one object active at a time, loop through all objects in the list.
 /// </summary>
 
 
