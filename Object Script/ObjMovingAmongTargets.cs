@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
 /// This script attach to a gameobject with rigidbody to move the object following target locations.
-/// Uncheck the use gravity 
+/// Uncheck the use gravity option in rigidbody.
 /// </summary>
 
 
