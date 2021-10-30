@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 /// <summary>
-/// Similar to the MissileLauncher script, this script is also used for shooting prefab object.
+/// Similar to the MissileLauncher script, this script is also used for shooting a prefab object.
 /// This one is used for shooting object when press a button.
 /// </summary>
 /// 
