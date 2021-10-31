@@ -23,6 +23,8 @@ public class Speedometer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //The script may not be needed to be attached to the moving object itself. 
+        // It can be used as separate object 
         //rb = GetComponent<Rigidbody>(vehicle);
         
     }
@@ -30,11 +32,11 @@ public class Speedometer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // MPH
+        // MPH option
         speed = Convert.ToInt32(vehicle.velocity.magnitude * 2.237);
         speedText.text = "E-Scooter Speed: " + speed + " MPH";
 
-        // KPH
+        // KPH option
         //speed = Convert.ToInt32(rb.velocity.magnitude * 3.6);
         //speedText.text = "E-Scooter Speed: " + speed + " KPH";
         
