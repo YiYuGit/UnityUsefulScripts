@@ -7,6 +7,7 @@ using UnityEngine;
 /// This script attach to a fire gameobject, when contact with "Wood" obejct, the fire can spread, and the fire object have a self-destroy time
 /// On self-destroy, the fire will leave a burn mark on the ground surface
 /// Prefab is available in the FireObjectPack.unitypackage
+/// The suitable object need to be dropped into the corresponding slots.
 /// </summary>
 
 public class SpreadFire : MonoBehaviour {
