@@ -25,9 +25,4 @@ public class TouchSwitch : MonoBehaviour {
        
         }
     }
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }
