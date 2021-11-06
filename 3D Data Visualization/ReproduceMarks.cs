@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+/// <summary>
+/// This script is used together with the FindAllObjectWithTag script.
+/// This script should be attached to an empty object to use.
+/// Read the recorded infomation, and reproduce them in the new scene.
+/// 
+/// </summary>
+
 public class ReproduceMarks : MonoBehaviour
 {
     // Name of the input file, no extension, the input CSV file should be in the Resources folder under the Assets
