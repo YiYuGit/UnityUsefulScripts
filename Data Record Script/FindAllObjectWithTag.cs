@@ -5,6 +5,17 @@ using System.IO;
 using System;
 using System.Globalization;
 using System.Threading;
+using System.Text.RegularExpressions;
+
+/// <summary>
+/// This script is used for recording all gameobjects(with"mark" tag) that instantiated during the gameplay.
+/// Attach this script to an empty object to make this recorder obejct.
+/// When gameplay is over, before exit the game, press the "l" key.
+/// The script will find all object with "mark' tag.
+/// Write their name, position and rotation into CSV file. The script will remove the "(clone)" part of the name, so later, the name can be used to match prefab name.
+/// </summary>
+
+
 
 public class FindAllObjectWithTag : MonoBehaviour
 {
@@ -15,7 +26,7 @@ public class FindAllObjectWithTag : MonoBehaviour
     void Start()
     {
         //Write the head of the csv file, adjust for different purpose accordingly
-        WriteToFile("\n" + "ObjectName" + "," + "position-x" + "," + "position-y" + "," + "position-z" + "," + "rotation-x" + "," + "rotation-y" + "," + "rotation-z" + "," + "rotation-w");
+        WriteToFile("objectName" + "," + "position_x" + "," + "position_y" + "," + "position_z" + "," + "rotation_x" + "," + "rotation_y" + "," + "rotation_z" + "," + "rotation_w");
     }
 
     // Update is called once per frame
@@ -39,13 +50,21 @@ public class FindAllObjectWithTag : MonoBehaviour
 
             foreach (GameObject paintedMark in paintedMarks)
             {
+                // THe next few lines remove the "(Clone)" from the mark name, so when reproducing the objects, the other script can match the name.
+                var nameText = paintedMark.name;
 
-                print(paintedMark.name);
+                // Remove text between brackets.
+                nameText = Regex.Replace(nameText, @"\(.*\)", "");
+
+                // Remove extra spaces. Use if needed
+                //nameText = Regex.Replace(nameText, @"\s+", " ");
+
+                print(nameText);
                 print(paintedMark.transform.position);
                 print(paintedMark.transform.rotation);
 
                 // Write to file
-                WriteToFile("\n" + paintedMark.name + "," + paintedMark.transform.position.x + "," + paintedMark.transform.position.y + "," + paintedMark.transform.position.z + "," + paintedMark.transform.rotation.x + "," + paintedMark.transform.rotation.y + "," + paintedMark.transform.rotation.z + "," + paintedMark.transform.rotation.w + "," + paintedMark.transform.rotation);
+                WriteToFile("\n" + nameText + "," + paintedMark.transform.position.x + "," + paintedMark.transform.position.y + "," + paintedMark.transform.position.z + "," + paintedMark.transform.rotation.x + "," + paintedMark.transform.rotation.y + "," + paintedMark.transform.rotation.z + "," + paintedMark.transform.rotation.w);
 
 
             }
