@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 
 /// <summary>
-/// This script is used together with the FindAllObjectWithTag script.
+/// This script is used together with the FindAllObjectWithTag script (a data recording script that record the location and rotation of gameobjets).
 /// This script should be attached to an empty object to use.
 /// Read the recorded infomation, and reproduce them in the new scene.
 /// 
