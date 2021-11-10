@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script is used for instantiating  prefab image object at user selected location with corresponding position and rotation.
+/// So the result is apply paint image to surface.
+/// </summary>
+
+
+
 public class ApplyPaintToSurface : MonoBehaviour
 {
 
