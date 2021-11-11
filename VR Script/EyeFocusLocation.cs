@@ -5,6 +5,11 @@ using UnityEngine.Assertions;
 using System.IO;
 using System;
 
+/// <summary>
+/// Eye tracking script, track the eye focus location of user in VR
+/// </summary>
+
+
 // Need to be used with Vive SR SDK and HTC Vive Pro Eye device.
 // This script will record user eye focus locatoin in certain layers. 
 // Note the usage of Layer Mask to exlude certain layer, for example, the VR hand controller need to be excluded
