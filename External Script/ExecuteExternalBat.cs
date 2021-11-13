@@ -4,7 +4,8 @@ using System.Diagnostics;
 using System;
 
 /// <summary>
-/// This script can execute external batch file
+/// This script can execute a external batch file
+/// It can be used to trigger some external command from Unity
 /// </summary>
 
 public class ExecuteExternalBat : MonoBehaviour
