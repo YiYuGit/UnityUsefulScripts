@@ -3,6 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This is a 2 wheel bike or scooter controller, basically, it is a car controller as it has 4 wheels
+/// But the model only have 2 wheels, and not attached to those 4 wheels, just rotate for visual effects.
+
 public class ScooterController : MonoBehaviour
 {
     // Get rigidbody of the vehicle player, and change center of mass 
