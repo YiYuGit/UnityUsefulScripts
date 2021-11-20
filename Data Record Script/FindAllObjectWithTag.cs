@@ -8,11 +8,11 @@ using System.Threading;
 using System.Text.RegularExpressions;
 
 /// <summary>
-/// This script is used for recording all gameobjects(with"mark" tag) that instantiated during the gameplay.
+/// This script is used for recording all gameobjects(with"mark" tag) that were instantiated during the gameplay.
 /// Attach this script to an empty object to make this recorder obejct.
 /// When gameplay is over, before exit the game, press the "l" key.
 /// The script will find all object with "mark' tag.
-/// Write their name, position and rotation into CSV file. The script will remove the "(clone)" part of the name, so later, the name can be used to match prefab name.
+/// Write their name, position and rotation into CSV file. The script will remove the "(clone)" part of the object name, so later, the name can be used to match prefab name.
 /// </summary>
 
 
