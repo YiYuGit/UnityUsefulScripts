@@ -123,7 +123,6 @@ public class UtilityDetector : MonoBehaviour
             if (m_MyAudioSource.isPlaying)
             {
                 m_MyAudioSource.Stop();
-
             }
         }
     }
