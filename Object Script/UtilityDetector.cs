@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// This script track the location of tool/hand controller object, and then place the detector object(with trigger collider) below it.
 /// This script should be attached to th detector object.
-/// when in contact with the "pipe" object. It will trigger the sound.
+/// when in contact with the "pipe" object. It will trigger the beeping sound.
 /// 
 /// Note: the detector tool itself need to have a trigger collider and rigidbody(turn off gravity)
 /// During the contacting time of the detector and pipe object, there will be a beeping sound,
