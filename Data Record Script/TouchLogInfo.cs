@@ -11,6 +11,7 @@ using System;
 /// </summary>
 
 
+
 public class TouchLogInfo : MonoBehaviour
 {
     public void WriteToFile(string message)
