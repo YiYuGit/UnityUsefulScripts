@@ -7,6 +7,7 @@ using UnityEngine;
 /// Make sure the object has collider
 /// The script will find the audio source on start and disable the loop. 
 /// When trigger or collision happen, it will play the audio.
+/// Can be used for play instruction to player
 /// </summary>
 
 public class TriggerSoundPlay : MonoBehaviour
