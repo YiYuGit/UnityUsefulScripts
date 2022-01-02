@@ -5,9 +5,11 @@ using System;
 
 /// <summary>
 /// This script is used together with the FindAllObjectWithTag script (a data recording script that record the location and rotation of gameobjets) to record and reproduce objects that are
-/// instantiated during gameplay
+/// instantiated during the gameplay
 /// This script should be attached to an empty object to use.
-/// Read the recorded infomation, and reproduce them in the new scene.
+/// Read the recorded infomation, and reproduce them in the new scene on Start.
+/// 
+/// Change the column names to fit your application
 /// 
 /// </summary>
 
