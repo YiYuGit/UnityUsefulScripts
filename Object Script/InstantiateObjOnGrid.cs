@@ -6,6 +6,7 @@ using UnityEngine;
 /// This script is used to instantiate the prefab objects on a grid.
 /// The script read the boundary infomation and take the prefab.
 /// The instantiate process is controlled by a F11 key. If needed, this can be changed to be triggered by other method or key.
+/// ** an all-in-one version of this series is done , check "PolygonGridsMaker.cs" **
 /// </summary>
 public class InstantiateObjOnGrid : MonoBehaviour
 {
@@ -33,7 +34,9 @@ public class InstantiateObjOnGrid : MonoBehaviour
 
         int xRange = (int)(FindMaxAndMinInArray.xMax - FindMaxAndMinInArray.xMin);
 
-        // Two for loop to go through each point in the grid
+        // Two for loop to go through each point in the grid.
+        // Since the range is converted from float to int, add one and use <= in the for loop to make sure the range is large enough
+        // This can also use Math.Ceiling() ,Math.Floor() or Math.Round() Function depending on actual situation
         for ( int row = 0; row <= zRange + 1; row ++)
         {
             for (int col = 0; col <= xRange + 1; col ++)
