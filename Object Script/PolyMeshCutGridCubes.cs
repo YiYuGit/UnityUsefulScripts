@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// This script is used to attach to a mesh object and use the mesh to cut grid cubes and then move the cutout cubes to the container object
 /// This should be used with PolyMesh.cs , SaveMeshInEditor.cs and RenameChildrenObjects.cs
-/// 
+/// ** an all-in-one version of this series is done , check "PolygonGridsMaker.cs" **
 /// </summary>
 
 public class PolyMeshCutGridCubes : MonoBehaviour
@@ -14,7 +14,9 @@ public class PolyMeshCutGridCubes : MonoBehaviour
     public GameObject cutContainer;
 
 
-    //Use OnTriggerEnter to collide with the cubes and set them as the children of cutContainer
+    // Use OnTriggerEnter to collide with the cubes and set them as the children of cutContainer
+    // this need to manully move the mesh to cut
+    // If mesh already intersecting the cubes, use OnTriggerStay instead.
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("mark"))
@@ -22,8 +24,6 @@ public class PolyMeshCutGridCubes : MonoBehaviour
             other.gameObject.transform.SetParent(cutContainer.transform);
         }
     }
-
-
 
 
     // Start is called before the first frame update
