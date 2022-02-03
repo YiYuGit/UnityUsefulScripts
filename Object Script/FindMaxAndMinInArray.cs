@@ -8,6 +8,8 @@ using System.Linq;
 /// And using the OnDrawGizmos() to draw the rectangular boundary of the area.
 /// Y value can also be find using the same method. 
 /// This can be used to draw boundary of a play area.
+/// This can be used alone or be incorporated into other script, used as one method.
+/// Can add a public bool to control the OnDrawGizmos() status
 /// </summary>
 
 public class FindMaxAndMinInArray : MonoBehaviour
