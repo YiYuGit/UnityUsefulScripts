@@ -87,10 +87,11 @@ public class PolygonGridsMaker : MonoBehaviour
 
 
 
-
     // Start is called before the first frame update
     void Start()
     {
+        // The content of Start() can be moved into on method and called by pressing key. 
+
         //Set rigidbody
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
@@ -126,8 +127,6 @@ public class PolygonGridsMaker : MonoBehaviour
 
 
         // After InstantiateObj, the rectangular shaped grid is formed, and the OntriggerStay will move the cut cubes into exportContainer
-
-
         //Then rename the cubes in exportContainer
         Invoke("RenameChildren", 4f);
 
@@ -195,7 +194,6 @@ public class PolygonGridsMaker : MonoBehaviour
         //Debug.Log("The z min is " + Mathf.Min(positionsZ));
     }
 
-
     void InstantiateObj()
     {
         // Get z and x range. z for row, x for column 
@@ -220,6 +218,7 @@ public class PolygonGridsMaker : MonoBehaviour
             }
         }
     }
+
 
     // This is using the mesh collider to intersect with generated grid
     private void OnTriggerStay(Collider other)
@@ -246,9 +245,6 @@ public class PolygonGridsMaker : MonoBehaviour
     }
 
 
-
-
-
     // This function will take exportContainer that is already filled with correct shaped grid cubes and save it as a prefab
     private void CreatePrefab()
     {
@@ -260,8 +256,8 @@ public class PolygonGridsMaker : MonoBehaviour
     }
 
 
-
     // Use onDrawGizmos to show the boundary in Editor
+    // If don't want to show the OnDrawGizmos, just collapse the script in the inspector
     private void OnDrawGizmos()
     {
         // Find the value
