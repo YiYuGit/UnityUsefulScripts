@@ -160,7 +160,6 @@ public class VisibilityTest : MonoBehaviour
         // public void Invoke(string methodName, float time); Invokes the method methodName in time seconds.
         Invoke("LoadMeshFromFilter", 1.0f);
 
-
     }
 
     // Update is called once per frame
