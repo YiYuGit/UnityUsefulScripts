@@ -64,8 +64,11 @@ public class CatmulPath : MonoBehaviour
         points = GetComponentsInChildren<Transform>().Where(r => r.tag == "pipe").ToList();
 
         // calculate the catmull curve
+        // Method 1, use this for close circle
+        // for (int i = 0; i < points.Count ; i++)
 
-        for (int i = 0; i < points.Count; i++)
+        // Method 2, use this for single curve line
+        for (int i = 0; i < (points.Count - 1); i++)
         {
             Vector3 p0;
             Vector3 p1;
@@ -150,16 +153,12 @@ public class CatmulPath : MonoBehaviour
     {
 
         CatmulRom();
-
-        //This place change the color of the drawline or sphere
-        Gizmos.color = Color.yellow;
-
+        Gizmos.color = Color.white;
         foreach (Vector3 temp in newPoints)
         {
             Vector3 pos = new Vector3(temp.x, temp.y, temp.z);
             //Debug.Log(pos);
-
-            Gizmos.DrawSphere(pos, 0.1f);
+            Gizmos.DrawSphere(pos, 0.08f);
         }
 
         for (int i = 0; i < newPoints.Count; i++)
@@ -173,7 +172,11 @@ public class CatmulPath : MonoBehaviour
             }
             else if (i == 0)
             {
+                //Method 1 for close circle
                 previousPos = newPoints[newPoints.Count - 1];
+
+                //Method 2 for single curve line
+                //previousPos = newPoints[0];
             }
 
             Gizmos.DrawLine(previousPos, currentPos);
