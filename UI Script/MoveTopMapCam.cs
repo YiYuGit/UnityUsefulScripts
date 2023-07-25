@@ -77,6 +77,25 @@ public class MoveTopMapCam : MonoBehaviour
     }
 
 
+    // OnDisable and OnEnable stop all moving. Only allow start moving when pointer move onto button area again.
+    // Used for when moving button may need to be hidden.
+    void OnDisable()
+    {
+        moveLeft = false;
+        moveRight = false;
+        moveUp = false;
+        moveDown = false;
+    }
+
+    void OnEnable()
+    {
+        moveLeft = false;
+        moveRight = false;
+        moveUp = false;
+        moveDown = false;
+    }
+
+
 
 
     // Start is called before the first frame update
