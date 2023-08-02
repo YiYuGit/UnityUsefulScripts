@@ -14,7 +14,7 @@ using UnityEngine;
 /// when pointer exit the button area, stop moving camera
 /// Both are controlled by checking the bool value
 /// 
-/// The script can be modified for moving camera in other direction, here use x and z. for vertial, use x and y.
+/// The script can be modified for moving camera in other direction, for map on a horizontal plane here use x and z. for vertical map, use x and y.
 /// 
 /// To limit the movement range of the camera, check this video for example for clamping the movement range.  https://www.youtube.com/watch?v=R6scxu1BHhs
 /// 
@@ -26,7 +26,7 @@ public class MoveTopMapCam : MonoBehaviour
     [Header("Drop the top view camera here")]
     public Camera topViewCam;
     [Header("The moving speed of camera")]
-    public float moveSpeed = 2f;
+    public float moveSpeed = 50f;
 
     // bool for move in each direction
     private bool moveLeft = false;
@@ -49,21 +49,21 @@ public class MoveTopMapCam : MonoBehaviour
 
     public void MoveCamUp()
     {
-        moveUp = true;  
+        moveUp = true;
     }
     public void MoveCamDown()
     {
-        moveDown = true;    
+        moveDown = true;
     }
 
     public void StopMoveCamLeft()
-    { 
-        moveLeft = false; 
+    {
+        moveLeft = false;
     }
 
     public void StopMoveCamRight()
     {
-        moveRight= false;
+        moveRight = false;
     }
 
     public void StopMoveCamUp()
@@ -95,14 +95,6 @@ public class MoveTopMapCam : MonoBehaviour
         moveDown = false;
     }
 
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
