@@ -5,29 +5,31 @@ using System;
 
 /// <summary>
 /// This script read the coordiante data from ACAD exported csv file (unit should be meter, ft can also be used, but please pay attention to conversion problem)
-/// The column sequence may need to be adjusted, in Unity, the plane surface is the  X-Z horizontal surface, Y is the the vertical elevation.
+/// The column sequence may need to be adjusted when insantiate dots. In Unity, the plane surface is the  X-Z horizontal surface, Y is the the vertical elevation.
 /// so the normal XYZ may need to be change to XZY. If data source is not clear, you may plot once and check the distribution of the dots and adjust the column sequence.
 /// 
 /// Script will read the XYZ info and instantiate GPS dots at the location.
 /// The prefab object of the GPS dot should have a "OnMouseDownPlayUnityVideo" video control script attached to it.
-
-/// The start time and end time of the video will be assigne to the "OnMouseDownPlayUnityVideo" script on the GPS dot, so user can click on the dot and jump to the video play
-/// The start time come from the data file.
+/// The prefab also need collider for the mouse click. 
+/// The start time of the video will be assigned to the "OnMouseDownPlayUnityVideo" script on the GPS dot, so user can click on the dot and jump to the video play
+/// The start time come from the data file. 
 /// 
 /// Function expansion idea:
 /// 1.add additional data attributes in the data file, after instantiation, assign the data to the GPS dots.
 /// it can be real world latitude/longitude, project specific notes,etc
 /// Some of the additional data can be linked to a UI text or world space TMP text to show on mouse hover or mouse click
+/// (Done, additonal data is added to each dot, which can be used for external link. for example, see the "OpenGoogleMap" script.
 /// 
-/// 2. add notes taking function and report generatin function.
+/// 2.add notes taking function and report generatin function.
+/// (Working in progress, see WriteCSV and WriteTxt script, need to deal with comma in comments in CSV file. or link txt to CSV)
 /// 
 /// 3.Calculate the direction the user is looking in 360 video.
-/// (play 360 video inside unity with first person view, calculate in Unity coordiante systemn)
+/// (Done, play 360 video inside unity with first person view, calculate in Unity coordiante system. See "CalculateCameraHeading" script)
 /// 
 /// </summary>
 
 
-public class PlotTimeStampDotsBig : MonoBehaviour
+public class PlotTimeStampDots : MonoBehaviour
 {
     [Header("Name of data file in Resources folder")]
     public string GPSpoints;
@@ -77,12 +79,7 @@ public class PlotTimeStampDotsBig : MonoBehaviour
     // Full column names
     //[Header("Data column names")]
     //[SerializeField]
-    private string name0, name1, name2, name3, name4, name5, name6, name7, name8, name9, name10, name11;
-    //private string name1;
-    //private string name2;
-    //private string name3;
-    //private string name4;
-
+    private string name0, name1, name2, name3, name4, name5, name6, name7, name8, name9, name10;
 
 
     // Start is called before the first frame update
@@ -116,13 +113,12 @@ public class PlotTimeStampDotsBig : MonoBehaviour
         name10 = columnList[positionZ];
 
 
-
         for (var i = 0; i < markList.Count; i++)
         {
             // Get position value in markList at its "row", in "column" Name
             float p_x = Convert.ToSingle(markList[i][name8]);
-            float p_y = Convert.ToSingle(markList[i][name10]);
-            float p_z = Convert.ToSingle(markList[i][name9]);
+            float p_y = Convert.ToSingle(markList[i][name10]);  // pay attention to the y and z sequence, they are switched here
+            float p_z = Convert.ToSingle(markList[i][name9]);   // pay attention to the y and z sequence, they are switched here
 
             // Get start and end time for each position
             string s_t = Convert.ToString(markList[i][name0]);
@@ -130,7 +126,8 @@ public class PlotTimeStampDotsBig : MonoBehaviour
 
             // Assemble the position
             // Pay attention to the y and z value, many other software use z for height, unity use y for height, so the y and z sequence may need to be 
-            // switched in data file or here
+            // switched in data file or in script
+            // In this case, the y and z were already swithced in previous step
             Vector3 pos = new Vector3(p_x, p_y, p_z);
 
             // Instantiate as gameobject variable so that it can be manipulated within loop, the index comes from previous steps, pos and rot is from CSV
@@ -143,24 +140,20 @@ public class PlotTimeStampDotsBig : MonoBehaviour
             markPoint.name =s_t;
 
 
-
-
             //Change the start time and end time of the markPoint's "OnMouseDownPlay" script
             OnMouseDownPlayUnityVideo play = markPoint.GetComponent<OnMouseDownPlayUnityVideo>();
 
             // Assign otherdata
-            play.latitude = Convert.ToSingle(markList[i][name1]);
-            play.longitude = Convert.ToSingle(markList[i][name2]);
+            play.latitude = Convert.ToDouble(markList[i][name1]);
+            play.longitude = Convert.ToDouble(markList[i][name2]);
             play.elevationM = Convert.ToSingle(markList[i][name3]);
             play.timeStamp = Convert.ToString(markList[i][name4]);
-            play.northing = Convert.ToSingle(markList[i][name5]);
-            play.easting = Convert.ToSingle(markList[i][name6]);
+            play.northing = Convert.ToDouble(markList[i][name5]);
+            play.easting = Convert.ToDouble(markList[i][name6]);
             play.elevationFt = Convert.ToSingle(markList[i][name7]);
-
 
             //Assign the start time value
             play.startTime = Convert.ToInt32(s_t);
-
 
         }
 
@@ -175,6 +168,5 @@ public class PlotTimeStampDotsBig : MonoBehaviour
         }
 
     }
-
 
 }
