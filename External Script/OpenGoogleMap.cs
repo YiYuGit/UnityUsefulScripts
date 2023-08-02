@@ -41,13 +41,6 @@ public class OpenGoogleMap : MonoBehaviour
         Application.OpenURL("https://maps.google.com/?q=" + gpsDotInfo.latitude.ToString() + "," + gpsDotInfo.longitude.ToString());
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
