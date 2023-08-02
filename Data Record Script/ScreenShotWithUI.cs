@@ -33,7 +33,7 @@ public class ScreenShotWithUI : MonoBehaviour
 
     //This can also link to the WriteTxt script, when taking screen shot, also record a txt file containing the heading degrees
     [Header("Drop the write txt log here")]
-    public WriteTxt writeTxt;
+    public WriteCSVBookmark writeCsvFile;
 
 
     //private bool takeHiResShot = false;
@@ -41,10 +41,20 @@ public class ScreenShotWithUI : MonoBehaviour
 
     public static string ScreenShotName(int width, int height)
     {
+        /*
         // Define the file path and file name 
         return string.Format("{0}/capture/screenshot_{1}x{2}_{3}.png",
-                             Application.dataPath,
+                             //Application.dataPath,
+                             Application.streamingAssetsPath,
                              width, height,
+                             System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
+
+        */
+
+        // Define the file path and file name, just with year-month-day_hour-minute-second
+        return string.Format("{0}/capture/{1}.png",
+                             //Application.dataPath,
+                             Application.streamingAssetsPath,
                              System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
     }
 
@@ -66,7 +76,10 @@ public class ScreenShotWithUI : MonoBehaviour
         System.IO.File.WriteAllBytes(filename, bytes);
 
         //Write corresponding txt file
-        writeTxt.CreateTxtFile();
+        //writeTxt.CreateTxtFile();
+
+
+        writeCsvFile.WriteBookmark();
 
         Debug.Log(string.Format("Took screenshot to: {0}", filename));
 
@@ -87,10 +100,10 @@ public class ScreenShotWithUI : MonoBehaviour
         // Wait for screen rendering to complete
         yield return new WaitForEndOfFrame();
 
-        // wait time
-        yield return new WaitForSeconds(0.1f);
+        // wait time, if file name is based on hour-minute-second, make the wait time for at least 1.1 second, to make sure no two screenshots were named the same.
+        yield return new WaitForSeconds(1.1f);
 
-        // Turn off canvas
+        // Turn off canvas after the wait time
         canvas.SetActive(false);
 
         // Take screenshot
@@ -99,10 +112,16 @@ public class ScreenShotWithUI : MonoBehaviour
 
     }
 
+    // The "TakeScreenShot()" can be called in other script by calling
+    //
+    // StartCoroutine(ScreenShotWithUI.TakeScreenShot());
+    //
+    // In the other script, make a public void functon and use the above line.
+    // see example here https://discussions.unity.com/t/reference-coroutine-from-another-script/158962
 
-        void LateUpdate()
+    void LateUpdate()
     {
-        if(Input.GetKeyDown("k"))
+        if(Input.GetKeyDown(KeyCode.K))
         {
             StartCoroutine(TakeScreenShot());
         }
