@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 /// <summary>
+/// Experimental Script.
+/// 
 /// This script check the Euler Angle y of the target object
 /// the number in degree is updated every frame and is shown in the Inspector
 /// 
@@ -25,8 +26,10 @@ using UnityEngine;
 
 public class TestEulerAngle : MonoBehaviour
 {
+    // Drop the game object here, usually the camera or player
     public GameObject target;
 
+    // Show the Euler angle around y in degrees at runtime in the Inspector
     public float angle;
 
 
