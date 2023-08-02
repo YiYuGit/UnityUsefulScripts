@@ -26,6 +26,7 @@ public class VideoController : MonoBehaviour
     [Header("This is the current gps dot number")]
     public int gpsDotNumber;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,9 +37,33 @@ public class VideoController : MonoBehaviour
         videoPlayer.Pause();
     }
 
+
+    // These functions can be called by other scripts. The SetTime is used in OnMouseDownPlayUnityVideo, ReplayBookmark.
     public void SetTime(int time)
     {
         videoPlayer.time = time;    
+    }
+
+    public void PauseAndPlay()
+    {
+        if (videoPlayer.isPlaying)
+        {
+            videoPlayer.Pause();
+        }
+        else if (videoPlayer.isPaused)
+        {
+            videoPlayer.Play();
+        }
+    }
+
+    public void VideoJumpForward()
+    {
+        videoPlayer.time += 5f;
+    }
+
+    public void VideoJumpBackward()
+    {
+        videoPlayer.time -= 5f;
     }
 
 
@@ -49,24 +74,20 @@ public class VideoController : MonoBehaviour
         // Keep updating the current gps dot number
         gpsDotNumber = Convert.ToInt32(videoPlayer.time);
 
-        if (Input.GetKeyDown("space") && videoPlayer.isPlaying)
+        if (Input.GetKeyDown("space") )
         {
             //Debug.Log("space key was pressed");
-            videoPlayer.Pause();
-        }
-        else if (Input.GetKeyDown("space") && videoPlayer.isPaused)
-        {
-            videoPlayer.Play();
+            PauseAndPlay();
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            videoPlayer.time -= 5f;
+            VideoJumpBackward();
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            videoPlayer.time += 5f;
+            VideoJumpForward();
         }
     }
 
