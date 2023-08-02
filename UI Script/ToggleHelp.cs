@@ -21,13 +21,19 @@ public class ToggleHelp : MonoBehaviour
         helpText.SetActive(false);
     }
 
+    // Make the toggle help text into a function that can be called by other script
+    public void ToggleHelpText()
+    {
+        helpText.SetActive(!helpText.activeSelf);
+    }
+
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F1))
         {
-            helpText.SetActive(!helpText.activeSelf);
+            ToggleHelpText();
         }
     }
 }
