@@ -46,12 +46,13 @@ public class CameraNorthHeadingUI : MonoBehaviour
     {
         angle = heading.northToCameraAngle;
 
+        // The angle is a signed angle number, for north to camera heading, most time use all positive number, so if the angle is negative, add 360f.
         if (angle < 0)
         {
             angle = angle + 360f;
         }
 
-        // Update the text of angle text to correct format
+        // Update the text of angle text to correct format by rounding the float to int and convert to string
         angleText.text = Mathf.RoundToInt(angle).ToString();
 
     }
