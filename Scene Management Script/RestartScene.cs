@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 /// <summary>
 /// In use. 
-/// Restart current scene in the F1 help page OK button.
+/// Restart current scene with a button.
 /// </summary>
 
 public class RestartScene : MonoBehaviour
