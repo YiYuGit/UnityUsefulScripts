@@ -2,8 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// In use.
-/// Used for loading the user take initial heading and loading back to the main scene.
+/// Load scene by index in build or by scene name.
 /// </summary>
 
 public class SceneLoader : MonoBehaviour
