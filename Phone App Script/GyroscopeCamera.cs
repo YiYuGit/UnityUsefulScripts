@@ -1,3 +1,5 @@
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +8,8 @@ using UnityEngine;
 /// <summary>
 /// Get info from 
 /// https://gamedev.stackexchange.com/questions/174107/unity-gyroscope-orientation-attitude-wrong
+/// This script is for 360 photo view phone app. 
+/// Maybe also useful for 360 video view phone app. 
 /// </summary>
 
 public class GyroscopeCamera : MonoBehaviour
